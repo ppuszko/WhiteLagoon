@@ -5,6 +5,12 @@ VisualStudioVersion = 17.12.35410.144 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteLagoon.Web", "WhiteLagoon.Web\WhiteLagoon.Web.csproj", "{A2BD0BC7-8C61-48EA-99E5-1644A08911AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteLagoon.Domain", "WhiteLagoon.Domain\WhiteLagoon.Domain.csproj", "{6CDD4343-482F-4E18-AA0B-CDD19C9C921D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteLagoon.Application", "WhiteLagoon.Application\WhiteLagoon.Application.csproj", "{129B266A-17AE-4B1A-B145-D8A69417BF42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteLagoon.Infrastructure", "WhiteLagoon.Infrastructure\WhiteLagoon.Infrastructure.csproj", "{0DB2235C-C056-4B56-BDE9-2B36EA3F12D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{A2BD0BC7-8C61-48EA-99E5-1644A08911AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2BD0BC7-8C61-48EA-99E5-1644A08911AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2BD0BC7-8C61-48EA-99E5-1644A08911AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CDD4343-482F-4E18-AA0B-CDD19C9C921D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CDD4343-482F-4E18-AA0B-CDD19C9C921D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CDD4343-482F-4E18-AA0B-CDD19C9C921D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CDD4343-482F-4E18-AA0B-CDD19C9C921D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{129B266A-17AE-4B1A-B145-D8A69417BF42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{129B266A-17AE-4B1A-B145-D8A69417BF42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{129B266A-17AE-4B1A-B145-D8A69417BF42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{129B266A-17AE-4B1A-B145-D8A69417BF42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DB2235C-C056-4B56-BDE9-2B36EA3F12D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB2235C-C056-4B56-BDE9-2B36EA3F12D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DB2235C-C056-4B56-BDE9-2B36EA3F12D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB2235C-C056-4B56-BDE9-2B36EA3F12D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
