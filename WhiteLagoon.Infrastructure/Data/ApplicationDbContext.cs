@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace WhiteLagoon.Infrastructure.Data {
-    internal class ApplicationDbContext : DbContext {
+    public class ApplicationDbContext : DbContext {
         //the options instance with :base(options) passes all parameters from ApplicationDbContext to it's base class DbContext
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options){
             
