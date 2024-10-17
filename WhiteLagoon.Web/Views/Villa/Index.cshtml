@@ -1,0 +1,25 @@
+﻿@model IEnumerable<WhiteLagoon.Domain.Entities.Villa>
+
+<h1>Villa list:</h1>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Square feet</th>
+            <th>Occupancy</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model){
+            <tr>
+                <td>@obj.Name</td>
+                <td>@obj.Price</td>
+                <td>@obj.Sqft</td>            
+                <td>@obj.Occupancy</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
