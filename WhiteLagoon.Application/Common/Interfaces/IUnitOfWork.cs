@@ -7,5 +7,9 @@ using System.Threading.Tasks;
 namespace WhiteLagoon.Application.Common.Interfaces {
     public interface IUnitOfWork {
         IVillaRepository Villa { get; }
+        IVillaNumberRepository VillaNumber { get; }
+        IAmenityRepository Amenity { get; }
+
+        public void Save();
     }
 }
