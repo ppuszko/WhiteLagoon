@@ -4,8 +4,11 @@ using WhiteLagoon.Application.Common.Interfaces;
 using WhiteLagoon.Domain.Entities;
 using WhiteLagoon.Infrastructure.Data;
 using System;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WhiteLagoon.Web.Controllers {
+    //allows to access these methods only for logged in users
+    [Authorize]
     public class VillaController : Controller {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IWebHostEnvironment _webHostEnvironment;

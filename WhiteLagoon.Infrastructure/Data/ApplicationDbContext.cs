@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 using WhiteLagoon.Domain.Entities;
 
 namespace WhiteLagoon.Infrastructure.Data {
-    public class ApplicationDbContext : DbContext {
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser> {
         //the options instance with :base(options) passes all parameters from ApplicationDbContext to it's base class DbContext
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) {
 
@@ -16,9 +17,13 @@ namespace WhiteLagoon.Infrastructure.Data {
         public DbSet<Villa> Villas { get; set; }
         public DbSet<VillaNumber> VillaNumbers { get; set; }
         public DbSet<Amenity> Amenities { get; set; }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public DbSet<Booking> Bookings { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
-            //base.OnModelCreating(modelBuilder);
+            //required when having IdentityDbContext and overriding OnModelCreating
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<Villa>().HasData(
                 new Villa {
                     Id = 1,
@@ -139,6 +144,7 @@ namespace WhiteLagoon.Infrastructure.Data {
               VillaId = 3,
               Name = "Private Balcony"
           });
+           
         }
     }
 }
